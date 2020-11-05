@@ -30,6 +30,11 @@
             Home
           </router-link>
         </li>
+        <li class="nav-item">
+          <router-link :to="{ name: 'RoverPage' }" class="nav-link">
+            Rover
+          </router-link>
+        </li>
       </ul>
       <span class="navbar-text">
         <button
@@ -73,6 +78,7 @@
         </div>
       </span>
     </div>
+    <!-- </router-link> -->
   </nav>
 </template>
 

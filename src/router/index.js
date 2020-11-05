@@ -4,6 +4,8 @@ import Home from '../pages/Home.vue'
 // @ts-ignore
 import Profile from '../pages/Profile.vue'
 import { Auth0Provider } from '@bcwdev/auth0provider-client'
+// @ts-ignore
+import Rover from '../pages/MarsRoverPage.vue'
 
 const routes = [
   {
@@ -16,7 +18,13 @@ const routes = [
     name: 'Profile',
     component: Profile,
     beforeEnter: Auth0Provider.authGuard
+  },
+  {
+    path: '/rover',
+    name: 'RoverPage',
+    component: Rover
   }
+
 ]
 
 const router = createRouter({

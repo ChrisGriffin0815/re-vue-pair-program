@@ -1,6 +1,6 @@
 import Axios from 'axios'
 export const api = Axios.create({
-  baseURL: '',
+  baseURL: 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=pvThY8Ou0odGxqyPEestAs9gz7Flevh67tXOWWg1&sol=2',
   timeout: 3000
 })
 
