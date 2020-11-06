@@ -6,6 +6,8 @@ import Profile from '../pages/Profile.vue'
 import { Auth0Provider } from '@bcwdev/auth0provider-client'
 // @ts-ignore
 import Rover from '../pages/MarsRoverPage.vue'
+// @ts-ignore
+import Pokemon from '../pages/PokemonPage.vue'
 
 const routes = [
   {
@@ -23,6 +25,12 @@ const routes = [
     path: '/rover',
     name: 'RoverPage',
     component: Rover
+  },
+  {
+    path: '/pokemon',
+    name: 'Pokemon',
+    component: Pokemon,
+    beforeEnter: Auth0Provider.authGuard
   }
 
 ]

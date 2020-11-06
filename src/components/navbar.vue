@@ -34,6 +34,9 @@
           <router-link :to="{ name: 'RoverPage' }" class="nav-link">
             Rover
           </router-link>
+          <router-link :to="{ name: 'Pokemon' }" class="nav-link">
+            Pokemon
+          </router-link>
         </li>
       </ul>
       <span class="navbar-text">
